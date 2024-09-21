@@ -17,7 +17,6 @@ function App() {
     <Route path="/ticket" element={<Ticket />} />
     <Route path="/movie" element={<Movie />} />
     </Routes>
-    
     </main>
     </Router>
     </>

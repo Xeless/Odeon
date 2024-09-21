@@ -11,6 +11,7 @@ export default {
     colors: {
       principal: '#002C45',
       spantextcolor: '#591DA7',
+      backgroundticket: "#2017B6",
     },
   },
 },

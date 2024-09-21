@@ -3,18 +3,16 @@ import SvgBackground from './TicketBackground';
 const Ticket = () => {
     return (
         <SvgBackground>
-            {/* Image en haut */}
-            <foreignObject x="0" y="0" width="100%" height="150">
+            <foreignObject x="0" y="2" width="100%" height="150" className='rounded-3xl'>
                 <div xmlns="http://www.w3.org/1999/xhtml" className="w-full h-full">
                     <img src='https://image.noelshack.com/fichiers/2024/38/5/1726833341-test.jpg' alt='' className="w-full h-auto" />
                 </div>
             </foreignObject>
-            {/* Titre */}
             <text x="50%" y="180" textAnchor="middle" fill="white" fontSize="20" fontWeight="bold">
             Jujutsu Kaisen 0
             </text>
             <text x="50%" y="210" textAnchor="middle" fill="#591DA7" fontSize="10">
-                Auteur
+            Park Seong-hu
             </text>
             {/* Détails */}
             <g transform="translate(30, 240)">
@@ -27,19 +25,19 @@ const Ticket = () => {
             </g>
             <g transform="translate(180, 240)">
                 <text fill="#591DA7" fontSize="9">Visuel</text>
-                <text y="15" fill="white" fontSize="11" fontWeight="bold" >3D</text>
+                <text y="15" x="6" fill="white" fontSize="11" fontWeight="bold" >3D</text>
             </g>
             <g transform="translate(30, 288)">
                 <text fill="#591DA7" fontSize="9">Salle</text>
-                <text y="15" fill="white" fontSize="11" fontWeight="bold" >3</text>
+                <text y="15" x="6" fill="white" fontSize="11" fontWeight="bold" >3</text>
             </g>
             <g transform="translate(110, 288)">
                 <text fill="#591DA7" fontSize="9">Rangée</text>
-                <text y="15" fill="white" fontSize="11" fontWeight="bold" >D</text>
+                <text y="15" x="10" fill="white" fontSize="11" fontWeight="bold" >D</text>
             </g>
             <g transform="translate(180, 288)">
                 <text fill="#591DA7" fontSize="9">Siege</text>
-                <text y="15" fill="white" fontSize="11" fontWeight="bold" >6</text>
+                <text y="15" x="6" fill="white" fontSize="11" fontWeight="bold" >6</text>
             </g>
             <g transform="translate(85, 335)">
                 <text x="15" fill="#591DA7" fontSize="9">Adresse</text>
@@ -47,7 +45,7 @@ const Ticket = () => {
             </g>
             <g transform="translate(5, 420)">
                 <text x="15" fill="#591DA7" fontSize="9">Code de resevation</text>
-                <text y="20" x="15" fill="white" fontSize="12" fontWeight="bold">54982315</text>
+                <text y="20" x="25" fill="white" fontSize="12" fontWeight="bold">54982315</text>
             </g>
             <g transform='translate(160,395)'>
             <svg width="60" height="60" viewBox="0 0 52 52" fill="white" xmlns="http://www.w3.org/2000/svg">

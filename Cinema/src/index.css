@@ -27,12 +27,10 @@ a:hover {
 
 body {
   margin: 0;
-  place-items: center;
   height: 100vh;
- width: 100%;
+  width: 100%;
   background-color: #15121E;
 }
-
 
 h1 {
   font-size: 3.2em;
