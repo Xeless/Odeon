@@ -1,4 +1,4 @@
-import SvgBackground from './TicketBackground';
+import SvgBackground from '../composants/TicketBackground';
 
 const Ticket = () => {
     return (

@@ -2,8 +2,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react'
 import './App.css'
 import Header from './composants/Header'
-import Ticket from './composants/Tickets';
-import Movie from './composants/Movie';
+import Ticket from './pages/Tickets';
+import Movie from './pages/Movie';
 
 
 function App() {
