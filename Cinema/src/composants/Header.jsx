@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -8,8 +9,8 @@ const Header = () => {
           MonLogo
         </div>
         <div className='flex space-x-4'>
-        <p className='text-white'>Movie</p>
-        <p className='text-white'>Ticket</p>
+        <Link to="/movie" className='text-white'>Movie</Link>
+        <Link to="/ticket" className="text-white">Ticket</Link>
         <p className='text-white'>Connexion</p>
         </div>
       </nav>
