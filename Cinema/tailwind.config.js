@@ -7,6 +7,9 @@ export default {
   theme: {
     extend: {
 
+      screens: {
+        'xs': '390px', // Crée un nouveau point de rupture pour 390px
+      },
     
     colors: {
       principal: '#002C45',

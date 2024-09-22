@@ -4,6 +4,7 @@ import './App.css'
 import Header from './composants/Header'
 import Ticket from './pages/Tickets';
 import Movie from './pages/Movie';
+import Login from './pages/Login'
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     <Routes>
     <Route path="/ticket" element={<Ticket />} />
     <Route path="/movie" element={<Movie />} />
+    <Route path="/login" element={<Login />} />
     </Routes>
     </main>
     </Router>

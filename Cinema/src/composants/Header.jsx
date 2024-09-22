@@ -11,7 +11,7 @@ const Header = () => {
         </div>
         <div className='flex space-x-4'>
         <Link to="/ticket" className="text-white">Ticket</Link>
-        <Link to="/Connexion" className='text-white'>Cree un compte</Link>
+        <Link to="/Login" className='text-white'>Cree un compte</Link>
         </div>
       </nav>
     </header>
