@@ -11,8 +11,10 @@ function App() {
   return (
     <>
      <Router>
+      <header>
      <Header />
-    <main className='container mx-auto p-4 flex items-center justify-center'>
+     </header>
+    <main className='mx-auto contain-content bg-backgroundprincipal'>
     <Routes>
     <Route path="/ticket" element={<Ticket />} />
     <Route path="/movie" element={<Movie />} />

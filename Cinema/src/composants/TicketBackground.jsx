@@ -1,7 +1,7 @@
 const SvgBackground = ({ children }) => {
     return (
         <svg
-            width="30%"        // Largeur en pourcentage pour s'adapter à l'écran
+            width="430"        // Largeur en pourcentage pour s'adapter à l'écran
             height="auto"       // Hauteur automatique pour maintenir le ratio
             viewBox="0 0 247 486"
             fill="none"
