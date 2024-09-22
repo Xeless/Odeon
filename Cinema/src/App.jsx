@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { GoogleOAuthProvider } from '@react-oauth/google';
 import { useState } from 'react'
 import './App.css'
 import Header from './composants/Header'
@@ -11,6 +12,7 @@ function App() {
   
   return (
     <>
+    <GoogleOAuthProvider clientId='646063815400-9bc8nbdqil0ehk8peroqi158lknkup7e.apps.googleusercontent.com'>
      <Router>
       <header>
      <Header />
@@ -23,6 +25,7 @@ function App() {
     </Routes>
     </main>
     </Router>
+    </GoogleOAuthProvider>
     </>
   )
 }
