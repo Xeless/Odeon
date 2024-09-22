@@ -27,7 +27,7 @@ a:hover {
 
 body {
   margin: 0;
-  height: 100vh;
+  height: auto;
   width: 100%;
   background-color: #15121E;
 }
@@ -38,7 +38,6 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
@@ -61,8 +60,5 @@ button:focus-visible {
   }
   a:hover {
     color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
   }
 }
