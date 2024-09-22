@@ -1,17 +1,51 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="p-4 fixed w-full top-0 z-10">
       <nav className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl space-x-3">
-          <Link to={"/Home"} className='text-white'>L'Odéon</Link>
-          <Link to="/movie" className='text-white'>Movie</Link>
+        <div className="flex items-center space-x-3">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-white font-bold" : "text-gray-400"
+            }
+          >
+            <img
+              src="../../public/uploads/logo.svg"
+              alt=""
+              width={50}
+              height={50}
+              className="mr-2"
+            />
+          </NavLink>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-white font-bold" : "text-gray-400"
+            }
+          >
+            Movie
+          </NavLink>
         </div>
-        <div className='flex space-x-4'>
-        <Link to="/ticket" className="text-white">Ticket</Link>
-        <Link to="/Login" className='text-white'>Cree un compte</Link>
+        <div className="flex space-x-4">
+          <NavLink
+            to="/Ticket"
+            className={({ isActive }) =>
+              isActive ? "text-white font-bold" : "text-gray-400"
+            }
+          >
+            Ticket
+          </NavLink>
+          <NavLink
+            to="/Login"
+            className={({ isActive }) =>
+              isActive ? "text-white text-bold" : "text-gray-400"
+            }
+          >
+            Créer un compte
+          </NavLink>
         </div>
       </nav>
     </header>

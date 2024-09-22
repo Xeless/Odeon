@@ -18,7 +18,7 @@ function App() {
     <main className='mx-auto contain-content bg-backgroundprincipal'>
     <Routes>
     <Route path="/ticket" element={<Ticket />} />
-    <Route path="/movie" element={<Movie />} />
+    <Route path="/" element={<Movie />} />
     <Route path="/login" element={<Login />} />
     </Routes>
     </main>
