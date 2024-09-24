@@ -25,12 +25,16 @@ const useAuth = () => {
                 },
             });
             console.log(response.data);
+
+            localStorage.setItem('userPicture', response.data.user.picture);
+
             return response.data;
         } catch (err) {
             setError(err.response?.data?.message || 'Une erreur s\'est produite');
             throw err;
         }
     };
+    
 
     return { login, registerWithGoogle, error };
 };
