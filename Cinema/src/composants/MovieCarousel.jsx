@@ -24,11 +24,16 @@ const MovieCarousel = ({ title, movies }) => {
           },
           // pour les écrans un peu plus grands
           768: {
-            slidesPerView: 3, // 3 éléments pour un écran de 768px
-            spaceBetween: 20,
+            slidesPerView: 2, // 3 éléments pour un écran de 768px
+            spaceBetween: 10,
           },
           // pour les écrans de tablettes/grandes tailles
           1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+
+          },
+          1500: {
             slidesPerView: 7,
 
           },
