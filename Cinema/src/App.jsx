@@ -7,6 +7,7 @@ import Ticket from './pages/Tickets';
 import Movie from './pages/Movie';
 import Login from './pages/Login';
 import Profil from './pages/Profil';
+import Settings from './pages/Settings'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
               <Route path="/" element={<Movie />} />
               <Route path="/login" element={<Login />} />
               <Route path='/profile' element={<Profil/>} />
+              <Route path='/settings' element={<Settings/>} />
             </Routes>
           </main>
         </Router>
