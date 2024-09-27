@@ -1,5 +1,6 @@
 import User from '../models/User.js';
 import bcrypt from 'bcrypt';
+import { body, validationResult } from 'express-validator';
 
 // Inscription d'un utilisateur
 export const registerUser = async (req, res) => {
@@ -32,9 +33,21 @@ export const loginUser = async (req, res) => {
     }
 };
 
+
+
 // Inscription avec Google
 export const registerWithGoogle = async (req, res) => {
-    const { email, username , picture } = req.body;
+    // Validation des champs
+    await body('email').isEmail().withMessage('Doit être un email valide').run(req);
+    await body('username').notEmpty().withMessage('Le nom d\'utilisateur ne peut pas être vide').run(req);
+    await body('picture').optional().isURL().withMessage('L\'URL de l\'image doit être valide').run(req);
+
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+        return res.status(400).json({ errors: errors.array() });
+    }
+
+    const { email, username, picture } = req.body;
 
     try {
         let user = await User.findOne({ email });

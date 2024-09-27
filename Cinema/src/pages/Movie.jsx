@@ -12,7 +12,7 @@ const Movie = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="relative flex flex-col justify-center items-start h-full w-full px-5 md:px-96">
+        <div className="relative flex flex-col justify-center items-start h-full w-full px-5 ">
           <img
             alt="Logo"
             loading="lazy"

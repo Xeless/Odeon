@@ -11,6 +11,7 @@ const MovieCarousel = ({ title, movies }) => {
       
       <Swiper
         modules={[Pagination]}
+
         breakpoints={{
           // pour les mobiles
           320: {
